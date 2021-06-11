@@ -1,0 +1,86 @@
+body {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mainer {
+  float: left;
+  width: 420px;
+  height: 420px;
+  margin-top: 60px;
+  margin-left: 60px;
+  border: 6px solid #A0522D;
+  background-color: #F5DEB3;
+  perspective: 800px;
+  user-select: none;
+  .cell {
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #CD853F;
+    background-color: #F5DEB3;
+    font-size: 22px;
+    color: #808000;
+  }
+
+  .cell-disabled {
+    background-color: #CD853F;
+  }
+}
+
+.puzzles {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+  align-items: center;
+  .puzzle {
+    position: absolute;
+    cursor: pointer;
+    div {
+      float: left;
+      display: block;
+      box-sizing: border-box;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .puzzle-1 {
+    top: 60px;
+    left: 550px;
+  }
+  .puzzle-2 {
+    top: 60px;
+    left: 850px;
+  }
+  .puzzle-3 {
+    top: 60px;
+    left: 1150px;
+  }
+  .puzzle-4 {
+    top: 220px;
+    left: 550px;
+  }
+  .puzzle-5 {
+    top: 220px;
+    left: 850px;
+  }
+  .puzzle-6 {
+    top: 220px;
+    left: 1150px;
+  }
+  .puzzle-7 {
+    top: 450px;
+    left: 550px;
+  }
+  .puzzle-8 {
+    top: 450px;
+    left: 850px;
+  }
+}
